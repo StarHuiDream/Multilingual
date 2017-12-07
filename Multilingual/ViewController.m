@@ -8,30 +8,56 @@
 
 #import "ViewController.h"
 #import <CoreLocation/CoreLocation.h>
+#import "STLanguageTool.h"
 
 @interface ViewController ()<CLLocationManagerDelegate>
     
 @property (strong, nonatomic) CLLocationManager *locationManager;
-    
+@property (weak, nonatomic) IBOutlet UISegmentedControl *seamentControl;
+@property (weak, nonatomic) IBOutlet UILabel *contentLabel;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     [self startLocation];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.title = STLANG(@"第一个页面");
+}
+
+- (IBAction)langChangeOnClick:(UISegmentedControl *)sender {
+    
+    NSUInteger index = sender.selectedSegmentIndex;
+    switch (index) {
+        case 0:
+            [STLanguageTool saveUserLocalLang:@"zh-Hans"];
+            break;
+        case 1:
+            [STLanguageTool saveUserLocalLang:@"zh-Hant"];
+            break;
+        case 2:
+            [STLanguageTool saveUserLocalLang:@"en"];
+            break;
+        default:
+            [STLanguageTool saveUserLocalLang:@"zh-Hans"];
+            break;
+    }
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - CLLocationManagerDelegate
+- (void)locationManager:(CLLocationManager *)manager
+     didUpdateLocations:(NSArray *)locations {
+    CLLocation *newLocation = locations.lastObject;
+    NSLog(@"当前位置信息:%@",newLocation);
+    [self.locationManager stopUpdatingLocation];
 }
 
-    
-    
+#pragma mark - private
 -(void)startLocation{
+    
     if ([CLLocationManager locationServicesEnabled]) {
         if (self.locationManager == nil) {
             self.locationManager = [[CLLocationManager alloc] init];
@@ -44,31 +70,6 @@
     } else {
         NSLog(@"没定位");
     }
-    
-    // 开始定位
     [self.locationManager startUpdatingLocation];
 }
-    
-#pragma mark - CLLocationManagerDelegate
-- (void)locationManager:(CLLocationManager *)manager
-     didUpdateLocations:(NSArray *)locations {
-    
-    CLLocation *newLocation = locations.lastObject;
-    
-    
-    [self.locationManager stopUpdatingLocation];
-    
-    CLGeocoder *clGeoCoder = [[CLGeocoder alloc] init];
-    CLGeocodeCompletionHandler handle = ^(NSArray *placemarks, NSError *error)
-    {
-        
-        
-    };
-    [[NSUserDefaults standardUserDefaults] synchronize];
-    
-    [clGeoCoder reverseGeocodeLocation:newLocation completionHandler:handle];
-    
-}
-
-
 @end
