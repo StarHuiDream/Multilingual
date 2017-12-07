@@ -6,3 +6,4 @@
   Copyright © 2017年 StarHui. All rights reserved.
 */
 CFBundleDisplayName = "繁體";
+NSLocationWhenInUseUsageDescription = "我們需要妳的位置";

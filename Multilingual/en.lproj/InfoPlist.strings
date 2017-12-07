@@ -6,3 +6,4 @@
   Copyright © 2017年 StarHui. All rights reserved.
 */
 CFBundleDisplayName = "English";
+NSLocationWhenInUseUsageDescription = "We need your position";
