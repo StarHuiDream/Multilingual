@@ -13,8 +13,9 @@
 @interface ViewController ()<CLLocationManagerDelegate>
     
 @property (strong, nonatomic) CLLocationManager *locationManager;
-@property (weak, nonatomic) IBOutlet UISegmentedControl *seamentControl;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentControl;
 @property (weak, nonatomic) IBOutlet UILabel *contentLabel;
+@property (weak, nonatomic) IBOutlet UIButton *nextBtn;
 
 @end
 
@@ -23,8 +24,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self setupSegmentSelect];
+    
     [self startLocation];
-    self.title = STLANG(@"第一个页面");
+    
+    // 注册通知
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(langChange)
+                                                 name:LangChangeNotification
+                                               object:nil];
+    [self langChange];
+}
+
+-(void)dealloc{
+    
+  [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (IBAction)langChangeOnClick:(UISegmentedControl *)sender {
@@ -32,16 +45,16 @@
     NSUInteger index = sender.selectedSegmentIndex;
     switch (index) {
         case 0:
-            [STLanguageTool saveUserLocalLang:@"zh-Hans"];
+            [STLanguageTool saveUserLocalLang:ChineseHans];
             break;
         case 1:
-            [STLanguageTool saveUserLocalLang:@"zh-Hant"];
+            [STLanguageTool saveUserLocalLang:ChineseHant];
             break;
         case 2:
-            [STLanguageTool saveUserLocalLang:@"en"];
+            [STLanguageTool saveUserLocalLang:English];
             break;
         default:
-            [STLanguageTool saveUserLocalLang:@"zh-Hans"];
+            [STLanguageTool saveUserLocalLang:English];
             break;
     }
 }
@@ -71,5 +84,23 @@
         NSLog(@"没定位");
     }
     [self.locationManager startUpdatingLocation];
+}
+
+-(void)langChange{
+    self.title = STLANG(@"第一个页面");
+    self.contentLabel.text = STLANG(@"生如夏花之绚烂,死如秋叶之静美");
+    [self.nextBtn setTitle:STLANG(@"下一页") forState:UIControlStateNormal];
+}
+
+// 将当前语言对应的segment的条目选中
+-(void)setupSegmentSelect{
+    NSString *currentLang = [STLanguageTool fetchLangFileName];
+    if ([currentLang isEqualToString:ChineseHans]) {
+        [self.segmentControl setSelectedSegmentIndex:0];
+    }else if ([currentLang isEqualToString:ChineseHant]){
+        [self.segmentControl setSelectedSegmentIndex:1];
+    }else{
+        [self.segmentControl setSelectedSegmentIndex:2];
+    }
 }
 @end

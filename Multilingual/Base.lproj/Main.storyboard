@@ -88,7 +88,8 @@
                     <navigationItem key="navigationItem" title="第一个页面" id="Khn-q8-xZZ"/>
                     <connections>
                         <outlet property="contentLabel" destination="jVb-NH-VR2" id="dmT-90-qNH"/>
-                        <outlet property="seamentControl" destination="aEP-lE-sBq" id="ZbE-uS-as5"/>
+                        <outlet property="nextBtn" destination="43G-8L-RnQ" id="2W0-Yz-xAG"/>
+                        <outlet property="segmentControl" destination="aEP-lE-sBq" id="ca6-MK-har"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

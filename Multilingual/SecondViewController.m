@@ -18,6 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = STLANG(@"第二个页面");
     self.textLabel.text = STLANG(@"生如夏花之绚烂,死如秋叶之静美");
 }
 

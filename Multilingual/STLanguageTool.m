@@ -20,7 +20,7 @@ NSString * _Nonnull const languageFileKey = @"languageFileKey";
     return mBundle;
 }
 
-+ (NSString *)fetchLangFileName{
++ (NSString *_Nonnull)fetchLangFileName{
     
     NSString *languageFileNameStr = [[NSUserDefaults standardUserDefaults] stringForKey:languageFileKey];
     // （1）这里根据自己的需求处理，
@@ -31,12 +31,12 @@ NSString * _Nonnull const languageFileKey = @"languageFileKey";
         NSArray* languages = [[NSUserDefaults standardUserDefaults] objectForKey:@"AppleLanguages"];
         languageFileNameStr = [languages objectAtIndex:0];
         
-        if ([languageFileNameStr containsString:@"zh-Hant"]) {
-            languageFileNameStr = @"zh-Hant";
-        }else if ([languageFileNameStr containsString:@"zh-Hans"]){
-            languageFileNameStr = @"zh-Hans";
+        if ([languageFileNameStr containsString:ChineseHant]) {
+            languageFileNameStr = ChineseHant;
+        }else if ([languageFileNameStr containsString:ChineseHans]){
+            languageFileNameStr = ChineseHans;
         }else{
-            languageFileNameStr = @"en";
+            languageFileNameStr = English;
         }
         [STLanguageTool saveUserLocalLang:languageFileNameStr];
     }
@@ -45,9 +45,11 @@ NSString * _Nonnull const languageFileKey = @"languageFileKey";
 }
 
 + (void)saveUserLocalLang:(NSString *_Nonnull)langFileName{
-    
+
     [[NSUserDefaults standardUserDefaults] setObject:langFileName forKey:languageFileKey];
     [[NSUserDefaults standardUserDefaults] synchronize];
+     // 发送通知
+    [[NSNotificationCenter defaultCenter] postNotificationName:LangChangeNotification object:nil];
 }
 
 @end
