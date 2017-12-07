@@ -7,18 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A27779F31FD9091800B3E563 /* STLanguageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A27779F21FD9091800B3E563 /* STLanguageTool.m */; };
+		A269927B1FD94D0100E5542C /* STLanguageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A269927A1FD94D0100E5542C /* STLanguageTool.m */; };
+		A269928D1FD94D9B00E5542C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A26992831FD94D9B00E5542C /* Localizable.strings */; };
+		A269928E1FD94D9B00E5542C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A26992851FD94D9B00E5542C /* InfoPlist.strings */; };
+		A269928F1FD94D9B00E5542C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A26992891FD94D9B00E5542C /* Assets.xcassets */; };
+		A26992921FD94E2A00E5542C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A26992911FD94E2A00E5542C /* Info.plist */; };
 		A291BF041FD91269009233C9 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A291BF031FD91269009233C9 /* SecondViewController.m */; };
 		A297EA0B1FD7D9DC004FA60B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A297EA0A1FD7D9DC004FA60B /* AppDelegate.m */; };
 		A297EA0E1FD7D9DC004FA60B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A297EA0D1FD7D9DC004FA60B /* ViewController.m */; };
 		A297EA111FD7D9DC004FA60B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A297EA0F1FD7D9DC004FA60B /* Main.storyboard */; };
-		A297EA131FD7D9DC004FA60B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A297EA121FD7D9DC004FA60B /* Assets.xcassets */; };
 		A297EA161FD7D9DC004FA60B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A297EA141FD7D9DC004FA60B /* LaunchScreen.storyboard */; };
 		A297EA191FD7D9DC004FA60B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A297EA181FD7D9DC004FA60B /* main.m */; };
 		A297EA231FD7D9DC004FA60B /* MultilingualTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A297EA221FD7D9DC004FA60B /* MultilingualTests.m */; };
 		A297EA2E1FD7D9DC004FA60B /* MultilingualUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A297EA2D1FD7D9DC004FA60B /* MultilingualUITests.m */; };
-		A297EA5D1FD7E618004FA60B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A297EA5F1FD7E618004FA60B /* InfoPlist.strings */; };
-		A297EA621FD7E631004FA60B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A297EA641FD7E631004FA60B /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +40,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A27779F11FD9091800B3E563 /* STLanguageTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STLanguageTool.h; sourceTree = "<group>"; };
-		A27779F21FD9091800B3E563 /* STLanguageTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STLanguageTool.m; sourceTree = "<group>"; };
+		A26992791FD94D0100E5542C /* STLanguageTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLanguageTool.h; sourceTree = "<group>"; };
+		A269927A1FD94D0100E5542C /* STLanguageTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STLanguageTool.m; sourceTree = "<group>"; };
+		A26992841FD94D9B00E5542C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		A26992861FD94D9B00E5542C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		A26992871FD94D9B00E5542C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A26992881FD94D9B00E5542C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A26992891FD94D9B00E5542C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A269928A1FD94D9B00E5542C /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		A269928B1FD94D9B00E5542C /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		A26992911FD94E2A00E5542C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A291BF021FD91269009233C9 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		A291BF031FD91269009233C9 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		A297EA061FD7D9DC004FA60B /* Multilingual.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Multilingual.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,9 +58,7 @@
 		A297EA0C1FD7D9DC004FA60B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A297EA0D1FD7D9DC004FA60B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A297EA101FD7D9DC004FA60B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A297EA121FD7D9DC004FA60B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A297EA151FD7D9DC004FA60B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A297EA171FD7D9DC004FA60B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A297EA181FD7D9DC004FA60B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A297EA1E1FD7D9DC004FA60B /* MultilingualTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultilingualTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A297EA221FD7D9DC004FA60B /* MultilingualTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultilingualTests.m; sourceTree = "<group>"; };
@@ -59,12 +66,6 @@
 		A297EA291FD7D9DC004FA60B /* MultilingualUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultilingualUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A297EA2D1FD7D9DC004FA60B /* MultilingualUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultilingualUITests.m; sourceTree = "<group>"; };
 		A297EA2F1FD7D9DC004FA60B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A2A265AE1FD937850037832F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		A2A265AF1FD937850037832F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		A2A265B01FD938270037832F /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		A2A265B11FD938270037832F /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		A2A265B21FD938530037832F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A2A265B31FD938530037832F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +93,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A26992781FD94D0100E5542C /* STLangTool */ = {
+			isa = PBXGroup;
+			children = (
+				A26992791FD94D0100E5542C /* STLanguageTool.h */,
+				A269927A1FD94D0100E5542C /* STLanguageTool.m */,
+			);
+			path = STLangTool;
+			sourceTree = "<group>";
+		};
+		A26992821FD94D9B00E5542C /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				A26992831FD94D9B00E5542C /* Localizable.strings */,
+				A26992851FD94D9B00E5542C /* InfoPlist.strings */,
+				A26992891FD94D9B00E5542C /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
 		A297E9FD1FD7D9DC004FA60B = {
 			isa = PBXGroup;
 			children = (
@@ -115,21 +135,18 @@
 		A297EA081FD7D9DC004FA60B /* Multilingual */ = {
 			isa = PBXGroup;
 			children = (
+				A26992911FD94E2A00E5542C /* Info.plist */,
+				A26992821FD94D9B00E5542C /* SupportingFiles */,
+				A26992781FD94D0100E5542C /* STLangTool */,
 				A297EA091FD7D9DC004FA60B /* AppDelegate.h */,
 				A297EA0A1FD7D9DC004FA60B /* AppDelegate.m */,
 				A297EA0C1FD7D9DC004FA60B /* ViewController.h */,
 				A297EA0D1FD7D9DC004FA60B /* ViewController.m */,
 				A291BF021FD91269009233C9 /* SecondViewController.h */,
 				A291BF031FD91269009233C9 /* SecondViewController.m */,
-				A27779F11FD9091800B3E563 /* STLanguageTool.h */,
-				A27779F21FD9091800B3E563 /* STLanguageTool.m */,
 				A297EA0F1FD7D9DC004FA60B /* Main.storyboard */,
-				A297EA121FD7D9DC004FA60B /* Assets.xcassets */,
 				A297EA141FD7D9DC004FA60B /* LaunchScreen.storyboard */,
-				A297EA171FD7D9DC004FA60B /* Info.plist */,
 				A297EA181FD7D9DC004FA60B /* main.m */,
-				A297EA5F1FD7E618004FA60B /* InfoPlist.strings */,
-				A297EA641FD7E631004FA60B /* Localizable.strings */,
 			);
 			path = Multilingual;
 			sourceTree = "<group>";
@@ -260,11 +277,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A297EA621FD7E631004FA60B /* Localizable.strings in Resources */,
 				A297EA161FD7D9DC004FA60B /* LaunchScreen.storyboard in Resources */,
-				A297EA5D1FD7E618004FA60B /* InfoPlist.strings in Resources */,
-				A297EA131FD7D9DC004FA60B /* Assets.xcassets in Resources */,
+				A269928E1FD94D9B00E5542C /* InfoPlist.strings in Resources */,
+				A26992921FD94E2A00E5542C /* Info.plist in Resources */,
+				A269928D1FD94D9B00E5542C /* Localizable.strings in Resources */,
 				A297EA111FD7D9DC004FA60B /* Main.storyboard in Resources */,
+				A269928F1FD94D9B00E5542C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,10 +308,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A291BF041FD91269009233C9 /* SecondViewController.m in Sources */,
-				A27779F31FD9091800B3E563 /* STLanguageTool.m in Sources */,
 				A297EA0E1FD7D9DC004FA60B /* ViewController.m in Sources */,
 				A297EA191FD7D9DC004FA60B /* main.m in Sources */,
 				A297EA0B1FD7D9DC004FA60B /* AppDelegate.m in Sources */,
+				A269927B1FD94D0100E5542C /* STLanguageTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +347,26 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		A26992831FD94D9B00E5542C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A26992841FD94D9B00E5542C /* zh-Hans */,
+				A26992871FD94D9B00E5542C /* en */,
+				A269928A1FD94D9B00E5542C /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		A26992851FD94D9B00E5542C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A26992861FD94D9B00E5542C /* zh-Hans */,
+				A26992881FD94D9B00E5542C /* en */,
+				A269928B1FD94D9B00E5542C /* zh-Hant */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		A297EA0F1FD7D9DC004FA60B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -343,26 +381,6 @@
 				A297EA151FD7D9DC004FA60B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		A297EA5F1FD7E618004FA60B /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A2A265AE1FD937850037832F /* zh-Hans */,
-				A2A265B01FD938270037832F /* zh-Hant */,
-				A2A265B21FD938530037832F /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		A297EA641FD7E631004FA60B /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A2A265AF1FD937850037832F /* zh-Hans */,
-				A2A265B11FD938270037832F /* zh-Hant */,
-				A2A265B31FD938530037832F /* en */,
-			);
-			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
