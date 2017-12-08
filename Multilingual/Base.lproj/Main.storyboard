@@ -39,7 +39,7 @@
                                 <segments>
                                     <segment title="简体"/>
                                     <segment title="繁體"/>
-                                    <segment title="英文"/>
+                                    <segment title="English"/>
                                 </segments>
                                 <color key="tintColor" red="1" green="0.1142796019" blue="0.13397862660000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
