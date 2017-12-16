@@ -99,23 +99,68 @@
         <!--第二个页面-->
         <scene sceneID="V7j-Lx-jrb">
             <objects>
-                <viewController id="7CH-9y-CRH" customClass="SecondViewController" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="7CH-9y-CRH" customClass="SecondViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2do-7i-SzV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let life be beautiful like summer flowers and death like autumn leaves" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qug-DY-db7">
-                                <rect key="frame" x="15" y="313" width="345" height="41"/>
+                                <rect key="frame" x="15" y="80" width="345" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.21111685037612915" green="0.23108214139938354" blue="0.25191584229469299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zYi-1B-sE7">
+                                <rect key="frame" x="0.0" y="121" width="375" height="546"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MUTestCellCN" rowHeight="81" id="fWA-tk-VQV" customClass="MUTestCell">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="81"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fWA-tk-VQV" id="s1s-4R-dDR">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Family/Last Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaf-jw-iFp">
+                                                    <rect key="frame" x="15" y="30" width="78.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please input your Family/Last name " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fii-8E-aln">
+                                                    <rect key="frame" x="108.5" y="26" width="251.5" height="30"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="fii-8E-aln" firstAttribute="centerY" secondItem="s1s-4R-dDR" secondAttribute="centerY" id="8zg-SI-ozi"/>
+                                                <constraint firstItem="fii-8E-aln" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="s1s-4R-dDR" secondAttribute="leading" constant="20" symbolic="YES" id="Cha-m7-U7N"/>
+                                                <constraint firstItem="aaf-jw-iFp" firstAttribute="leading" secondItem="s1s-4R-dDR" secondAttribute="leading" constant="15" id="MkX-xC-Vfn"/>
+                                                <constraint firstAttribute="trailing" secondItem="fii-8E-aln" secondAttribute="trailing" constant="15" id="RWk-sJ-X9d"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aaf-jw-iFp" secondAttribute="trailing" constant="20" symbolic="YES" id="fiR-8c-NON"/>
+                                                <constraint firstItem="aaf-jw-iFp" firstAttribute="centerY" secondItem="s1s-4R-dDR" secondAttribute="centerY" id="nGr-Cc-1hf"/>
+                                                <constraint firstItem="fii-8E-aln" firstAttribute="leading" secondItem="aaf-jw-iFp" secondAttribute="trailing" constant="15" id="uCf-s1-ej4"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="7CH-9y-CRH" id="DiF-MY-Fki"/>
+                                    <outlet property="delegate" destination="7CH-9y-CRH" id="FSQ-4c-0IY"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="zYi-1B-sE7" firstAttribute="top" secondItem="qug-DY-db7" secondAttribute="bottom" id="1F5-kM-Dod"/>
+                            <constraint firstItem="zYi-1B-sE7" firstAttribute="leading" secondItem="sca-K2-tyH" secondAttribute="leading" id="1Mn-He-QvF"/>
                             <constraint firstItem="qug-DY-db7" firstAttribute="leading" secondItem="2do-7i-SzV" secondAttribute="leading" constant="15" id="8cc-rk-bUG"/>
-                            <constraint firstItem="qug-DY-db7" firstAttribute="centerY" secondItem="2do-7i-SzV" secondAttribute="centerY" id="PLU-Fh-l28"/>
+                            <constraint firstItem="sca-K2-tyH" firstAttribute="trailing" secondItem="zYi-1B-sE7" secondAttribute="trailing" id="Qg2-F5-Xxd"/>
+                            <constraint firstItem="sca-K2-tyH" firstAttribute="bottom" secondItem="zYi-1B-sE7" secondAttribute="bottom" id="mLp-BX-DaH"/>
                             <constraint firstAttribute="trailing" secondItem="qug-DY-db7" secondAttribute="trailing" constant="15" id="rr3-jn-mLB"/>
+                            <constraint firstItem="qug-DY-db7" firstAttribute="top" secondItem="sca-K2-tyH" secondAttribute="top" constant="16" id="tDB-Tf-gOe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sca-K2-tyH"/>
                     </view>

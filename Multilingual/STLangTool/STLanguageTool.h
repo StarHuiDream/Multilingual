@@ -28,6 +28,7 @@ static NSString * _Nonnull LangChangeNotification = @"LangChangeNotification";;
  * 获取用户设置app 的当前语言
  */
 + (NSBundle *_Nonnull)localizedBundle;
+
 /**
  * 获取用户手机系统设置的语言包，（这里根据自己的需求处理，我这里的处理是如果没有对应的语言包默认返回英文）
  */

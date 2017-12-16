@@ -27,6 +27,7 @@
 		A297EA191FD7D9DC004FA60B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A297EA181FD7D9DC004FA60B /* main.m */; };
 		A297EA231FD7D9DC004FA60B /* MultilingualTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A297EA221FD7D9DC004FA60B /* MultilingualTests.m */; };
 		A297EA2E1FD7D9DC004FA60B /* MultilingualUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A297EA2D1FD7D9DC004FA60B /* MultilingualUITests.m */; };
+		A2C3F97C1FDE8EC2007D5756 /* MUTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C3F97B1FDE8EC2007D5756 /* MUTestCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,8 @@
 		A297EA291FD7D9DC004FA60B /* MultilingualUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultilingualUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A297EA2D1FD7D9DC004FA60B /* MultilingualUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultilingualUITests.m; sourceTree = "<group>"; };
 		A297EA2F1FD7D9DC004FA60B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2C3F97A1FDE8EC2007D5756 /* MUTestCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MUTestCell.h; sourceTree = "<group>"; };
+		A2C3F97B1FDE8EC2007D5756 /* MUTestCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MUTestCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +204,7 @@
 			children = (
 				A26992911FD94E2A00E5542C /* Info.plist */,
 				A26992821FD94D9B00E5542C /* SupportingFiles */,
+				A2C3F9731FDE8E3D007D5756 /* View */,
 				A26992781FD94D0100E5542C /* STLangTool */,
 				A297EA091FD7D9DC004FA60B /* AppDelegate.h */,
 				A297EA0A1FD7D9DC004FA60B /* AppDelegate.m */,
@@ -231,6 +235,15 @@
 				A297EA2F1FD7D9DC004FA60B /* Info.plist */,
 			);
 			path = MultilingualUITests;
+			sourceTree = "<group>";
+		};
+		A2C3F9731FDE8E3D007D5756 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A2C3F97A1FDE8EC2007D5756 /* MUTestCell.h */,
+				A2C3F97B1FDE8EC2007D5756 /* MUTestCell.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,6 +430,7 @@
 				A291BF041FD91269009233C9 /* SecondViewController.m in Sources */,
 				A297EA0E1FD7D9DC004FA60B /* ViewController.m in Sources */,
 				A297EA191FD7D9DC004FA60B /* main.m in Sources */,
+				A2C3F97C1FDE8EC2007D5756 /* MUTestCell.m in Sources */,
 				A297EA0B1FD7D9DC004FA60B /* AppDelegate.m in Sources */,
 				A269927B1FD94D0100E5542C /* STLanguageTool.m in Sources */,
 			);
